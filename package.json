@@ -1,0 +1,22 @@
+{
+    "name": "api-testing-suite",
+    "version": "1.0.0",
+    "description": "A lightweight and comprehensive framework for API testing with Supertest and Axios.",
+    "main": "index.js",
+    "scripts": {
+      "test": "mocha 'tests/**/*.test.js' --timeout 5000 --reporter spec",
+      "report": "allure generate allure-results --clean && allure open"
+    },
+    "author": "Kulish Kulshrestha",
+    "license": "MIT",
+    "dependencies": {
+      "axios": "^1.4.0",
+      "chai": "^4.3.7",
+      "supertest": "^6.3.3"
+    },
+    "devDependencies": {
+      "mocha": "^10.2.0",
+      "allure-mocha": "^2.0.0-beta.10"
+    }
+  }
+  
